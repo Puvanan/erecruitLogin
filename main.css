@@ -1,0 +1,201 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #ffffff;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+svg{
+    width: 800px;
+    align-self: center;
+    justify-self: center;
+    margin-left: 500px;
+}
+#person4{
+    opacity: 1;
+}
+#person3{
+    opacity: 0;
+}
+#person1{
+    opacity: 0;
+}
+#person2{
+    opacity: 0;
+}
+#star4{
+    opacity: 0;
+}
+#star3{
+    opacity: 0;
+}
+#star1{
+    opacity: 0;
+}
+#star2{
+    opacity: 0;
+}
+#tie{
+    opacity: 1;
+}
+#tick{
+    opacity: 1;
+}
+svg:hover #glass{
+    animation: search 3s forwards 0s linear;
+}
+
+svg:hover #tick{
+    animation: rise 3s forwards 0s linear;
+}
+
+/* svg:hover #star4{
+    animation: fall 3s forwards 0s linear;
+}
+svg:hover #star3{
+    animation: fall 3s forwards 0s linear;
+}
+svg:hover #star1{
+    animation: fall 3s forwards 0s linear;
+}
+svg:hover #star2{
+    animation: fall 3s forwards 0s linear;
+} */
+svg:hover #person4{
+    animation: rise1 1s forwards 0s linear;
+}
+svg:hover #tie{
+    animation: rise 3s forwards 0s linear;
+}
+svg:hover #person3{
+    animation: rise 1.5s forwards 0s linear;
+}
+svg:hover #person1{
+    animation: rise 0.5s forwards 0s linear;
+}
+svg:hover #person2{
+    animation: rise 2s forwards 0s linear;
+}
+
+@keyframes rise1{
+    0%{
+        opacity: 0;
+        }
+    77%{
+        opacity: 0;
+        }
+    100%{
+        opacity: 1;
+        background: #008000;
+        }
+}
+
+@keyframes rise{
+    0%{
+        opacity: 0;
+        }
+    77%{
+        opacity: 0;
+        }
+    100%{
+        opacity: 1;
+        }
+}
+@keyframes fall{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+        }
+    77%{
+        opacity: 0;
+        }
+    100%{
+        transform: translateY(10px);
+        opacity: 1;
+        }
+}
+@keyframes search{
+    /* 0%{
+        transform: translateX(-390px) translateY(150px);
+        } */
+    20%{
+        transform: translateX(-190px) translateY(100px);
+        }
+    40%{
+        transform: translateX(0) translateY(0);
+        }
+    60%{
+        transform: translateX(300px) translateY(100px);
+        }
+    80%{
+        transform: translateX(0) translateY(0);
+        }
+}
+
+.st0{opacity:6.000000e-02;fill:#ED1C24;}
+.st1{fill:#FF7BAC;}
+.st2{fill:none;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+.st3{fill:none;stroke:#00FF00;stroke-width:4;stroke-miterlimit:10;}
+.st4{opacity:8.000000e-02;fill:#ED1C24;}
+.st5{stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+
+/* #circle1 {  
+    opacity: 0;
+  }
+  
+#circle2 {
+    opacity: 1;
+ } */
+
+svg:hover #circle1{
+    animation: bounceIn 1s forwards 70ms;
+}
+svg:hover #circle2{
+    animation: bounceIn 1s forwards;
+}
+
+  @keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+  
+    20% {
+      transform: scale(1.1);
+    }
+  
+    40% {
+      transform: scale(0.9);
+    }
+  
+    60% {
+      opacity: .1;
+      transform: scale(1.03);
+    }
+  
+    80% {
+      transform: scale(0.97);
+    }
+  
+    to {
+      opacity: .1;
+      transform: scale(1);
+    }
+  }
+
+  
